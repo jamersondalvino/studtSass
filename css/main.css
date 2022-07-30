@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  font-family: sans-serif;
+}
+
+.container .box .danger, .container .box .warning, .container .box .success {
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 6px;
+  box-shadow: 1px 1px 2px black;
+  color: white;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+.container .box {
+  width: 30%;
+  padding: 20px;
+  color: black;
+  background-color: white;
+  border-radius: 8px;
+}
+.container .box.active {
+  background: silver;
+  color: white;
+}
+.container .box h2 {
+  font-size: 22px;
+}
+.container .box p {
+  text-indent: 30px;
+  font-size: 18px;
+  font-weight: 100;
+  letter-spacing: 2px;
+}
+.container .box p.hiden {
+  display: none;
+}
+.container .box ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.container .box a {
+  color: green;
+}
+.container .box a:hover {
+  color: yellow;
+}
+.container .box a:hover + p.hiden {
+  display: block;
+}
+.container .box .success {
+  background-color: green;
+}
+.container .box .warning {
+  background-color: yellow;
+  color: black;
+}
+.container .box .danger {
+  background-color: red;
+}/*# sourceMappingURL=main.css.map */
